@@ -54,9 +54,36 @@
     footer {
       background: #222;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #ccc;
+      padding: 20px 0 10px 0;
+      font-size: 1rem;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .footer-buttons a {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 8px;
+      background: #73cfff;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.2s;
+      margin: 0 5px;
+    }
+    .footer-buttons a:hover {
+      background: #aee7ff;
+    }
+    .email-section {
+      margin-top: 10px;
+      text-align: center;
+      color: #eee;
+      font-size: 1.12rem;
+      font-family: inherit;
     }
   </style>
 </head>
@@ -75,7 +102,7 @@
   <main>
     <h2>About the Band</h2>
     <p class="bio-text">
-      Funny Dog is an alternative rock band from OKC and Norman who study at OU.
+      Funny Dog is an alternative rock band from OKC and Norman blending 90s nostalgia with a modern garage edge. Formed by friends with a shared love of fuzz pedals and punchy hooks, the band delivers high-energy performances and introspective lyrics. From local venues to basement shows, Funny Dog has been steadily building a loyal following of fans who howl back.
     </p>
 
     <div class="band-images">
@@ -86,7 +113,16 @@
   </main>
 
   <footer>
-    &copy; 2025 Funny Dog | Follow us on Instagram and Discord
+    <div class="footer-buttons">
+      <a href="https://www.instagram.com/funnydogband/" target="_blank">Instagram</a>
+      <a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
+    </div>
+    <div class="email-section">
+      Email Us! funnydogband@gmail.com
+    </div>
+    <div style="margin-top: 10px; color: #888; font-size: 0.95rem;">
+      &copy; 2025 Funny Dog
+    </div>
   </footer>
 </body>
 </html>
