@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | Funny Dog</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Funny Dog</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
     body {
       background: #111;
       color: #eee;
@@ -29,7 +30,7 @@
     }
     nav a {
       margin: 0 15px;
-      color: #f7b5d6;
+      color: #ffcc00;
       text-decoration: none;
       font-weight: bold;
     }
@@ -117,82 +118,112 @@
       color: #eee;
       font-size: 1.12rem;
     }
-  </style>
+  
+    nav a {
+      margin: 0 15px;
+      color: #f7b5d6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fcd6e8;
+    }
+    
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #f7b5d6;
+  color: #111 !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: #fcd6e8;
+}
+
+    header {
+      padding: 0;
+      margin: 0;
+    }
+    header img {
+      width: 100vw;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="header-banner.png" alt="Funny Dog Live Banner" style="width:100%; max-height:360px; object-fit:cover; display:block;" />
-    <div style="position:absolute; top:20px; width:100%; text-align:center; text-shadow:0 0 10px #000;">
-      <h1 style="font-size:3rem; font-weight:bold; margin:0;">Funny Dog</h1>
-      <p style="font-size:1.5rem; font-weight:600; margin:10px 0 0; color:#73cfff;">Alternative Rock from OKC & Norman</p>
-    </div>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="#">Music</a>
-    <a href="#">Shows</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <main>
-    <div class="member">
-      <img src="ashley.jpg" alt="Ashley Munson">
-      <div class="bio">
-        <h2>Ashley Munson - Bass/Lead Vocals</h2>
-        <p>One of the original founding members of Funny Dog and the person behind the website. Ashley loves the performance arts and has been deeply involved in them since they were very young, doing theater and nearly everything else adjacent.</p>
-        <a class="button" href="https://open.spotify.com/playlist/2tcMtoF3MNgoxIVzSIxKln?si=0192a3157b5947d8" target="_blank">Ashley's Playlist</a>
-      </div>
-    </div>
-
-    <div class="member">
-      <img src="jackson.jpg" alt="Jackson Farria">
-      <div class="bio">
-        <h2>Jackson Farria - Synth/Keyboard</h2>
-        <p>Jackson is the resident self-made production artist who prides themselves on creating interesting textures for all of the songs, giving them very unique qualities. With a lot of drive toward developing patches and filling out the rest of the highs required for a full song, he does some seriously good work.</p>
-        <a class="button" href="https://open.spotify.com/playlist/5fsjuh4aXVG285dDZX2Lag?si=751caa9780ea43b9" target="_blank">Jackson's Playlist</a>
-      </div>
-    </div>
-
-    <div class="member">
-      <img src="zane.jpg" alt="Zane Smith">
-      <div class="bio">
-        <h2>Zane Smith - Guitar</h2>
-        <p>Despite his role of playing guitar in the band, don't be fooled! Zane's primary instrument for most of his life has been piano, but in recent years, he has been developing his skills in songwriting and guitar playing. So far, his skills as a musician have excelled and helped the band create some truly incredible stuff.</p>
-        <a class="button" href="https://open.spotify.com/playlist/7jpDTCzjNPTJl5GuA42Rhq?si=4a1e170d976449d2" target="_blank">Zane's Playlist</a>
-      </div>
-    </div>
-
-    <div class="member">
-      <img src="sam.jpg" alt="Sam Reid">
-      <div class="bio">
-        <h2>Sam Reid - Guitar</h2>
-        <p>As the most recent member of the group, Sam has brought on a grittier and warmer tone to the band that is essential to the 2-guitar sound that Funny Dog cultivates. Being a part of many bands in the past, Sam has once again lent his hand toward another musical project, and we are eternally grateful.</p>
-        <a class="button" href="https://open.spotify.com/playlist/6izmtEqoXzgVrHtaPl3pBO?si=142b6a401e334b17" target="_blank">Sam's Playlist</a>
-      </div>
-    </div>
-
-    <div class="member">
-      <img src="alex.jpg" alt="Alex Lamb">
-      <div class="bio">
-        <h2>Alex Lamb - Drums</h2>
-        <p>Brought on in a time of need, Alex is a classically trained musician and an essential piece of theory crafting in the music. First chair viola and drums don't seem like they'd translate, but his intricate playing and very unique drum beats make Alex a treat to work with all together in the band. Everyone does their part, but the drums certainly keep it together.</p>
-        <a class="button" href="https://open.spotify.com/playlist/6VhpbkTn2NAGPgbZw01evB?si=8f1014c27bdc4bd0" target="_blank">Alex's Playlist</a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-buttons">
-      <a href="https://www.instagram.com/funnydogband/" target="_blank">Instagram</a>
-      <a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
-    </div>
-    <div class="email-section">
+<header>
+<img alt="Funny Dog Live Banner" src="header-banner.png" style="width:100%; max-height:360px; object-fit:cover; display:block;"/>
+<div style="position:absolute; top:20px; width:100%; text-align:center; text-shadow:0 0 10px #000;">
+<h1 style="font-size:3rem; font-weight:bold; margin:0;">Funny Dog</h1>
+<p style="font-size:1.5rem; font-weight:600; margin:10px 0 0; color:#73cfff;">Alternative Rock from OKC &amp; Norman</p>
+</div>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="#">Music</a>
+<a href="#">Shows</a>
+<a href="#">Contact</a>
+</nav>
+<main>
+<div class="member">
+<img alt="Ashley Munson" src="ashley.jpg"/>
+<div class="bio">
+<h2>Ashley Munson - Bass/Lead Vocals</h2>
+<p>One of the original founding members of Funny Dog and the person behind the website. Ashley loves the performance arts and has been deeply involved in them since they were very young, doing theater and nearly everything else adjacent.</p>
+<a class="button" href="https://open.spotify.com/playlist/2tcMtoF3MNgoxIVzSIxKln?si=0192a3157b5947d8" target="_blank">Ashley's Playlist</a>
+</div>
+</div>
+<div class="member">
+<img alt="Jackson Farria" src="jackson.jpg"/>
+<div class="bio">
+<h2>Jackson Farria - Synth/Keyboard</h2>
+<p>Jackson is the resident self-made production artist who prides themselves on creating interesting textures for all of the songs, giving them very unique qualities. With a lot of drive toward developing patches and filling out the rest of the highs required for a full song, he does some seriously good work.</p>
+<a class="button" href="https://open.spotify.com/playlist/5fsjuh4aXVG285dDZX2Lag?si=751caa9780ea43b9" target="_blank">Jackson's Playlist</a>
+</div>
+</div>
+<div class="member">
+<img alt="Zane Smith" src="zane.jpg"/>
+<div class="bio">
+<h2>Zane Smith - Guitar</h2>
+<p>Despite his role of playing guitar in the band, don't be fooled! Zane's primary instrument for most of his life has been piano, but in recent years, he has been developing his skills in songwriting and guitar playing. So far, his skills as a musician have excelled and helped the band create some truly incredible stuff.</p>
+<a class="button" href="https://open.spotify.com/playlist/7jpDTCzjNPTJl5GuA42Rhq?si=4a1e170d976449d2" target="_blank">Zane's Playlist</a>
+</div>
+</div>
+<div class="member">
+<img alt="Sam Reid" src="sam.jpg"/>
+<div class="bio">
+<h2>Sam Reid - Guitar</h2>
+<p>As the most recent member of the group, Sam has brought on a grittier and warmer tone to the band that is essential to the 2-guitar sound that Funny Dog cultivates. Being a part of many bands in the past, Sam has once again lent his hand toward another musical project, and we are eternally grateful.</p>
+<a class="button" href="https://open.spotify.com/playlist/6izmtEqoXzgVrHtaPl3pBO?si=142b6a401e334b17" target="_blank">Sam's Playlist</a>
+</div>
+</div>
+<div class="member">
+<img alt="Alex Lamb" src="alex.jpg"/>
+<div class="bio">
+<h2>Alex Lamb - Drums</h2>
+<p>Brought on in a time of need, Alex is a classically trained musician and an essential piece of theory crafting in the music. First chair viola and drums don't seem like they'd translate, but his intricate playing and very unique drum beats make Alex a treat to work with all together in the band. Everyone does their part, but the drums certainly keep it together.</p>
+<a class="button" href="https://open.spotify.com/playlist/6VhpbkTn2NAGPgbZw01evB?si=8f1014c27bdc4bd0" target="_blank">Alex's Playlist</a>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer-buttons">
+<a href="https://www.instagram.com/funnydogband/" target="_blank">Instagram</a>
+<a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
+</div>
+<div class="email-section">
       Email Us! funnydogband@gmail.com
     </div>
-    <div style="margin-top: 10px; color: #888; font-size: 0.95rem;">
-      &copy; 2025 Funny Dog
+<div style="margin-top: 10px; color: #888; font-size: 0.95rem;">
+      © 2025 Funny Dog
     </div>
-  </footer>
+</footer>
 </body>
 </html>
