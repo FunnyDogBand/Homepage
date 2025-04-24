@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | About Funny Dog</title>
+  <title>About | Funny Dog</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
     body {
@@ -14,36 +14,18 @@
       padding: 0;
     }
     header {
-      position: relative;
+      background: #222;
+      padding: 20px;
       text-align: center;
-      color: #fff;
     }
-    .header-banner {
-      width: 100%;
-      max-height: 360px;
-      object-fit: cover;
-      display: block;
-    }
-    .header-text {
-      position: absolute;
-      top: 20px;
-      width: 100%;
-      text-align: center;
-      text-shadow: 0 0 10px #000;
-    }
-    .header-text h1 {
-      font-size: 3rem;
+    header h1 {
       margin: 0;
-      font-weight: bold;
-    }
-    .header-text p {
-      font-size: 1.5rem;
-      margin: 10px 0 0 0;
-      font-weight: 600;
+      font-size: 2.5rem;
     }
     nav {
       background: #222;
       padding: 12px 0;
+      text-align: center;
     }
     nav a {
       margin: 0 15px;
@@ -53,27 +35,54 @@
     }
     main {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      text-align: center;
     }
-    .bio-text {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 40px;
-    }
-    .band-images {
+    .member {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .band-images img {
-      max-width: 100%;
-      height: auto;
+      align-items: center;
+      background: #1c1c1c;
       border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-      max-height: 300px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 12px #0004;
+    }
+    .member:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .member img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 0 20px;
+    }
+    .bio {
+      flex: 1;
+    }
+    .bio h2 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+      color: #73cfff;
+    }
+    .bio p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .bio a.button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #73cfff;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .bio a.button:hover {
+      background: #aee7ff;
     }
     footer {
       background: #222;
@@ -107,17 +116,12 @@
       text-align: center;
       color: #eee;
       font-size: 1.12rem;
-      font-family: inherit;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="header-banner.png" alt="Funny Dog Live Banner" class="header-banner" />
-    <div class="header-text">
-      <h1>About Funny Dog</h1>
-      <p></p>
-    </div>
+    <h1>Funny Dog</h1>
   </header>
 
   <nav>
@@ -129,15 +133,49 @@
   </nav>
 
   <main>
-    <h2>The Band</h2>
-    <p class="bio-text">
-      Funny Dog is an alternative rock band from OKC and Norman
-    </p>
+    <div class="member">
+      <img src="ashley.jpg" alt="Ashley Munson">
+      <div class="bio">
+        <h2>Ashley Munson - Bass/Lead Vocals</h2>
+        <p>One of the original founding members of Funny Dog and the person behind the website. Ashley loves the performance arts and has been deeply involved in them since they were very young, doing theater and nearly everything else adjacent.</p>
+        <a class="button" href="https://open.spotify.com/playlist/2tcMtoF3MNgoxIVzSIxKln?si=0192a3157b5947d8" target="_blank">Ashley's Playlist</a>
+      </div>
+    </div>
 
-    <div class="band-images">
-      <img src="images/logo-placeholder.png" alt="Funny Dog Logo">
-      <img src="images/band-photo1.jpg" alt="Band Live Photo">
-      <img src="images/band-photo2.jpg" alt="Band Promo Shot">
+    <div class="member">
+      <img src="jackson.jpg" alt="Jackson Farria">
+      <div class="bio">
+        <h2>Jackson Farria - Synth/Keyboard</h2>
+        <p>Jackson is the resident self-made production artist who prides themselves on creating interesting textures for all of the songs, giving them very unique qualities. With a lot of drive toward developing patches and filling out the rest of the highs required for a full song, he does some seriously good work.</p>
+        <a class="button" href="https://open.spotify.com/playlist/5fsjuh4aXVG285dDZX2Lag?si=751caa9780ea43b9" target="_blank">Jackson's Playlist</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="zane.jpg" alt="Zane Smith">
+      <div class="bio">
+        <h2>Zane Smith - Guitar</h2>
+        <p>Despite his role of playing guitar in the band, don't be fooled! Zane's primary instrument for most of his life has been piano, but in recent years, he has been developing his skills in songwriting and guitar playing. So far, his skills as a musician have excelled and helped the band create some truly incredible stuff.</p>
+        <a class="button" href="https://open.spotify.com/playlist/7jpDTCzjNPTJl5GuA42Rhq?si=4a1e170d976449d2" target="_blank">Zane's Playlist</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="sam.jpg" alt="Sam Reid">
+      <div class="bio">
+        <h2>Sam Reid - Guitar</h2>
+        <p>As the most recent member of the group, Sam has brought on a grittier and warmer tone to the band that is essential to the 2-guitar sound that Funny Dog cultivates. Being a part of many bands in the past, Sam has once again lent his hand toward another musical project, and we are eternally grateful.</p>
+        <a class="button" href="https://open.spotify.com/playlist/6izmtEqoXzgVrHtaPl3pBO?si=142b6a401e334b17" target="_blank">Sam's Playlist</a>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="alex.jpg" alt="Alex Lamb">
+      <div class="bio">
+        <h2>Alex Lamb - Drums</h2>
+        <p>Brought on in a time of need, Alex is a classically trained musician and an essential piece of theory crafting in the music. First chair viola and drums don't seem like they'd translate, but his intricate playing and very unique drum beats make Alex a treat to work with all together in the band. Everyone does their part, but the drums certainly keep it together.</p>
+        <a class="button" href="https://open.spotify.com/playlist/6VhpbkTn2NAGPgbZw01evB?si=8f1014c27bdc4bd0" target="_blank">Alex's Playlist</a>
+      </div>
     </div>
   </main>
 
