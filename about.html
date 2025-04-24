@@ -14,18 +14,42 @@
       padding: 0;
     }
     header {
-      background: #222;
-      padding: 20px;
+      position: relative;
       text-align: center;
+      color: #fff;
     }
-    header h1 {
+    .header-banner {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .header-text {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      text-shadow: 0 0 10px #000;
+    }
+    .header-text h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .header-text p {
+      font-size: 1.5rem;
+      margin: 10px 0 0 0;
+      font-weight: 600;
+    }
+    nav {
+      background: #222;
+      padding: 12px 0;
     }
     nav a {
-      margin: 0 10px;
+      margin: 0 15px;
       color: #ffcc00;
       text-decoration: none;
+      font-weight: bold;
     }
     main {
       padding: 40px 20px;
@@ -89,20 +113,25 @@
 </head>
 <body>
   <header>
-    <h1>Funny Dog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Music</a>
-      <a href="#">Shows</a>
-      <a href="#">Contact</a>
-    </nav>
+    <img src="header-banner.png" alt="Funny Dog Live Banner" class="header-banner" />
+    <div class="header-text">
+      <h1>Funny Dog</h1>
+      <p>Alternative Rock from OKC & Norman</p>
+    </div>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Music</a>
+    <a href="#">Shows</a>
+    <a href="#">Contact</a>
+  </nav>
 
   <main>
     <h2>About the Band</h2>
     <p class="bio-text">
-      Funny Dog is an alternative rock band from OKC and Norman studying at OU!!
+      Funny Dog is an alternative rock band from OKC and Norman blending 90s nostalgia with a modern garage edge. Formed by friends with a shared love of fuzz pedals and punchy hooks, the band delivers high-energy performances and introspective lyrics. From local venues to basement shows, Funny Dog has been steadily building a loyal following of fans who howl back.
     </p>
 
     <div class="band-images">
