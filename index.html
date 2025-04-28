@@ -136,6 +136,33 @@ nav a {
 nav a:hover {
   background: #fcd6e8;
 }
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  nav a {
+    margin: 8px 0;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .player {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .band-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 </style>
 </head>
 <body>
