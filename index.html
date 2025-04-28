@@ -202,7 +202,24 @@ nav a:hover {
 </main>
 <footer>
 <div class="footer-buttons">
-<a href="https://www.instagram.com/funnydogband/" target="_blank">Instagram</a>
+<a href="#" onclick="openInstagram()" target="_blank">Instagram</a>
+
+<script>
+function openInstagram() {
+  var now = new Date().getTime();
+  var timeout = 500;
+  var url = "https://www.instagram.com/funnydogband/";
+  var app = "instagram://user?username=funnydogband";
+
+  window.location = app;
+
+  setTimeout(function() {
+    if (new Date().getTime() - now < timeout + 100) {
+      window.location = url;
+    }
+  }, timeout);
+}
+</script>
 <a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
 </div>
 <div class="email-section">
