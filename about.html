@@ -155,18 +155,33 @@ nav a:hover {
       object-fit: cover;
     }
     
+
 @media (max-width: 768px) {
+  header img {
+    height: 260px;
+    object-fit: cover;
+  }
+  .header-text {
+    top: 30px;
+  }
   nav {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px;
   }
   nav a {
-    margin: 8px 0;
-    width: 80%;
+    margin: 0;
+    width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+  nav a:nth-child(1) {
+    grid-column: 1 / 3;
+    margin-top: 10px;
   }
   .player {
     flex-direction: column;
