@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Shows | Funny Dog</title>
-  <link href="style.css" rel="stylesheet"/>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shows | Funny Dog</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
     body {
       background: #111;
       color: #eee;
@@ -14,15 +15,32 @@
       padding: 0;
     }
     header {
-      background: #222;
-      padding: 20px;
+      position: relative;
       text-align: center;
     }
     header img {
-      width: 100vw;
-      height: auto;
+      width: 100%;
+      max-height: 360px;
       object-fit: cover;
       display: block;
+    }
+    .header-text {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      text-shadow: 0 0 10px #000;
+    }
+    .header-text h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: bold;
+    }
+    .header-text p {
+      font-size: 1.5rem;
+      margin: 10px 0 0 0;
+      font-weight: 600;
+      color: #73cfff;
     }
     nav {
       background: #222;
@@ -31,39 +49,23 @@
     }
     nav a {
       display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      border-radius: 12px;
+      padding: 8px 16px;
+      border-radius: 8px;
       background: #f7b5d6;
       color: #111 !important;
       font-weight: bold;
-      text-decoration: none;
-      font-size: 1.1rem;
       transition: background 0.2s;
+      margin: 0 10px;
+      text-decoration: none;
     }
     nav a:hover {
       background: #fcd6e8;
     }
     main {
       padding: 40px 20px;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
-    }
-    .show-list {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .show-item {
-      background: #1c1c1c;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 0 12px #0004;
-      flex: 1;
-      min-width: 300px;
-      font-size: 1.1rem;
     }
     footer {
       background: #222;
@@ -85,7 +87,9 @@
       color: #111;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
       transition: background 0.2s;
+      margin: 0 5px;
     }
     .footer-buttons a:hover {
       background: #fcd6e8;
@@ -96,69 +100,93 @@
       color: #eee;
       font-size: 1.12rem;
     }
-  </style>
+  
+        nav a {
+          margin: 0 15px;
+          color: #f7b5d6;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          color: #fcd6e8;
+        }
+        
+header {
+  padding: 0;
+  margin: 0;
+}
+header img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #f7b5d6;
+  color: #111 !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: #fcd6e8;
+}
+</style>
 </head>
 <body>
 <header>
-  <img alt="Funny Dog Banner" src="header-banner.png"/>
-  <div style="position:absolute; top:20px; width:100%; text-align:center; text-shadow:0 0 10px #000;">
-    <h1 style="font-size:3rem; font-weight:bold; margin:0;">Funny Dog</h1>
-    <p style="font-size:1.5rem; font-weight:600; margin:10px 0 0; color:#73cfff;">Alternative Rock from OKC &amp; Norman</p>
-  </div>
+<img alt="Funny Dog Banner" src="header-banner.png"/>
+<div class="header-text">
+<h1>Funny Dog</h1>
+<p>Alternative Rock from OKC &amp; Norman</p>
+</div>
 </header>
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="music.html">Music</a>
-  <a href="shows.html">Shows</a>
-  <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="music.html">Music</a>
+<a href="shows.html">Shows</a>
+<a href="contact.html">Contact</a>
 </nav>
 <main>
-  <h2>Upcoming Shows</h2>
-  <div class="show-list">
-    <div class="show-item">
-      <strong>May 16th</strong><br>
-      Bookish Used Books and Art<br>
-      5:30 PM - 9:00 PM<br>
-      $12 Entry<br>
-      <em>W/ Bugjuice Blues and Daychaser</em>
-    </div>
-    <div class="show-item">
-      <strong>June 27th</strong><br>
-      Resonator Art Institute<br>
-      5:30 PM - 9:00 PM<br>
-      $10 Entry<br>
-      <em>W/ 2Stars, DULE, and The Nobodies</em>
-    </div>
-  </div>
+<h2>Shows</h2>
+<p style="font-size: 1.1rem;">Catch us live! Here's our upcoming show list.</p>
+
+<section class="shows" style="padding: 40px 20px;">
+<h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">Upcoming Shows</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+<div style="background: #222; padding: 25px; border-radius: 16px; width: 320px; text-align: center;">
+<h3 style="margin-bottom: 10px;">May 16th</h3>
+<p style="margin: 8px 0;">Bookish Used Books and Art</p>
+<p style="margin: 8px 0;">5:30 PM - 9:00 PM</p>
+<p style="margin: 8px 0;">$12 Entry</p>
+<p style="font-style: italic; margin-top: 12px;">W/ Bugjuice Blues and Daychaser</p>
+</div>
+<div style="background: #222; padding: 25px; border-radius: 16px; width: 320px; text-align: center;">
+<h3 style="margin-bottom: 10px;">June 27th</h3>
+<p style="margin: 8px 0;">Resonator Art Institute</p>
+<p style="margin: 8px 0;">5:30 PM - 9:00 PM</p>
+<p style="margin: 8px 0;">$10 Entry</p>
+<p style="font-style: italic; margin-top: 12px;">W/ 2Stars, DULE, and The Nobodies</p>
+</div>
+</div>
+</section>
 </main>
 <footer>
-  <div class="footer-buttons">
-    <a href="#" onclick="openInstagram()" target="_blank">Instagram</a>
-    <a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
-  </div>
-  <div class="email-section">
-    Email Us! funnydogband@gmail.com
-  </div>
-  <div style="margin-top: 10px; color: #888; font-size: 0.95rem;">
-    © 2025 Funny Dog
-  </div>
+<div class="footer-buttons">
+<a href="https://www.instagram.com/funnydogband/" target="_blank">Instagram</a>
+<a href="https://discord.gg/tqansq8dTV" target="_blank">Discord Server</a>
+</div>
+<div class="email-section">
+      Email Us! funnydogband@gmail.com
+    </div>
+<div style="margin-top: 10px; color: #888; font-size: 0.95rem;">
+      © 2025 Funny Dog
+    </div>
 </footer>
-<script>
-function openInstagram() {
-  var now = new Date().getTime();
-  var timeout = 500;
-  var url = "https://www.instagram.com/funnydogband/";
-  var app = "instagram://user?username=funnydogband";
-
-  window.location = app;
-
-  setTimeout(function() {
-    if (new Date().getTime() - now < timeout + 100) {
-      window.location = url;
-    }
-  }, timeout);
-}
-</script>
 </body>
 </html>
